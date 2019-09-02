@@ -1,0 +1,25 @@
+.about_me {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    flex-direction: row;
+}
+.about_me img {
+    width: 40%;
+}
+.about_me_text {
+    margin: 0px;
+    padding: 0px 0px 0px 15px;
+    font-weight: 500;
+}
+@media only screen and (max-width: 768px) {
+    .about_me {
+        flex-direction: column;
+    }
+    .about_me img {
+        width: 100%;
+    }
+    .about_me_text {
+        padding: 15px 0px 0px 0px;
+    }
+}

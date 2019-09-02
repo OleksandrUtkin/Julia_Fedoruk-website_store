@@ -1,0 +1,15 @@
+.header {
+    /*overflow: hidden;*/
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 0px 30px;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./../../img/IMG_1611.JPG);
+}
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 0px 15px;
+    }
+}

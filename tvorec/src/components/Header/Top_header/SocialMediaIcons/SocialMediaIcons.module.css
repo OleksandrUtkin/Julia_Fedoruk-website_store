@@ -1,0 +1,31 @@
+.social_media_icons {
+    width: 122px;
+}
+.social_media_icons a {
+    margin-right: 10px;
+}
+.social_media_icons a:last-child {
+    margin-right: 0px;
+}
+.social_media_icons a svg {
+    font-size: 24px;
+    vertical-align: bottom;
+}
+.social_media_icons a:nth-child(1) img {
+    width: 23px;
+    vertical-align: bottom;
+}
+.social_media_icons a:nth-child(2) svg path {
+    color: #4063AA;
+}
+.social_media_icons a:nth-child(3) svg path {
+    color: #31A5D8;
+}
+.social_media_icons a:nth-child(4) svg path {
+    color: #645AA7;
+}
+@media only screen and (max-width: 768px) {
+    .social_media_icons {
+        display: none;
+    }
+}

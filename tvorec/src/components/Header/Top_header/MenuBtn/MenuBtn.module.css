@@ -1,0 +1,46 @@
+.menu_btn {
+    position: relative;
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    outline: none;
+    overflow: hidden;
+}
+.menu_btn_span {
+    right: 0px;
+    width: 30px;
+    height: 2px;
+    background-color: #323232;
+    border-radius: 2px;
+    position: absolute;
+    transition: all .2s ease-in-out;
+}
+.btn_span1 {
+    top: 0px;
+    transition: all .2s ease-in-out;
+}
+.btn_span2 {
+    top: 10px;
+    transition: all .2s ease-in-out;
+}
+.btn_span3 {
+    top: 22px;
+    transition: all .2s ease-in-out;
+}
+.btn_span_1_clicked {
+    transform: rotate(45deg);
+    top: 10px;
+}
+.btn_span_2_clicked {
+    right: -70px;
+}
+.btn_span_3_clicked {
+    transform: rotate(-45deg);
+    top: 10px;
+}
+@media only screen and (min-width: 769px) {
+    .menu_btn{
+        display: none;
+    }
+}
