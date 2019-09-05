@@ -1,23 +1,31 @@
 .about_me {
-    display: flex;
+    display: block;
     width: 100%;
     max-width: 1200px;
-    flex-direction: row;
 }
 .about_me img {
     width: 40%;
+    float: left;
+    margin-bottom: 15px;
+    margin-right: 15px;
 }
 .about_me_text {
     margin: 0px;
-    padding: 0px 0px 0px 15px;
-    font-weight: 500;
+    padding: 0px 0px 0px 0px;
+    font-size: 18px;
+    font-family:Roboto-Light;
+}
+.display_none {
+    display: none;
 }
 @media only screen and (max-width: 768px) {
     .about_me {
+        display: flex;
         flex-direction: column;
     }
     .about_me img {
         width: 100%;
+        margin-right: 0px;
     }
     .about_me_text {
         padding: 15px 0px 0px 0px;

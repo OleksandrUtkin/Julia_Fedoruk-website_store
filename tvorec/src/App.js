@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './App.css';
+import s from './App.module.css';
 import Header from "./components/Header/Header";
 import './fonts/fonts.css';
 import {BrowserRouter, Route} from "react-router-dom";
@@ -31,23 +31,20 @@ class App extends Component {
         return (
             <BrowserRouter>
                 <div className=
-                         {this.state.menuBtnClicked ?  `wrapper_hidden`:`wrapper` }
-                    >
+                         {this.state.menuBtnClicked ?  `${s.wrapper_hidden}`:`${s.wrapper}` }>
                     <Header
                         updMenuBtnClicked={this.updMenuBtnClicked}
-                        menuBtnClicked={this.state.menuBtnClicked}
-                    />
-                    <main className='main'>
-                        <Route path="/aboutMe" render={ ()=> <AboutMe/>} />
-                        <Route path="/store" render={ ()=> <Store/>}/>
-                        <Route path="/gallery" render={ ()=> <Gallery/>} />
-                        <Route path="/information" render={ ()=> <Information/>}/>
-                        <Route path="/delivery" render={ ()=> <Delivery/>} />
+                        menuBtnClicked={this.state.menuBtnClicked}/>
+                    <main className={s.main}>
+                        <Route path="/" component={AboutMe} />
+                        <Route path="/store" component={Store} />
+                        <Route path="/gallery" component={Gallery} />
+                        <Route path="/information" component={Information}/>
+                        <Route path="/delivery" component={Delivery} />
                     </main>
                     <Footer/>
                 </div>
             </BrowserRouter>
-
         );
     }
 }

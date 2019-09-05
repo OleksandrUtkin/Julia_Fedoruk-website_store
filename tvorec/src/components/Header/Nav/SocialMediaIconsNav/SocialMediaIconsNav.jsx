@@ -10,16 +10,16 @@ import { faViber } from '@fortawesome/free-brands-svg-icons'
 const SocialMediaIconsNav = () => {
   return (
         <div className={s.social_media_icons}>
-            <a target="_blank" href="https://www.instagram.com/julia.fedoruk/">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/julia.fedoruk/">
                 <img src={insta_logo} alt="insta_logo"/>
             </a>
-            <a target="_blank" href="https://www.facebook.com/profile.php?id=100012206616585">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100012206616585">
                 <FontAwesomeIcon icon={faFacebookSquare}/>
             </a>
-            <a target="_blank" href="tg://resolve?domain=julia_fedoruk">
+            <a target="_blank" rel="noopener noreferrer" href="tg://resolve?domain=julia_fedoruk">
                 <FontAwesomeIcon icon={faTelegram}/>
             </a>
-            <a target="_blank" href="viber://chat?number=+380687003479">
+            <a target="_blank" rel="noopener noreferrer" href="viber://chat?number=+380687003479">
                 <FontAwesomeIcon icon={faViber}/>
             </a>
         </div>

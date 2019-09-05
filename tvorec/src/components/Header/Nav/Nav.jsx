@@ -24,7 +24,8 @@ class Nav extends Component {
             }>
                 <ul>
                     <li className={s.nav_li}>
-                        <NavLink to='/aboutMe'
+                        <NavLink to='/'
+                                 exact={true}
                                  activeClassName={s.active_link}
                                  onClick={this.props.updMenuBtnClicked}>
                             Про мене

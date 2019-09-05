@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './store.css';
 
-const Store = () => {
+const Store = (props) => {
     return (
         <section className={s.store}>
             <section id='betonni_viroby'>1</section>

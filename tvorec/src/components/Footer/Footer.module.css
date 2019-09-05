@@ -10,8 +10,9 @@
 }
 .footer p {
     margin-right: 10px;
+    font-family:Roboto-Light;
 }
 .footer a {
     margin-left: 10px;
-    font-weight: 600;
+    font-family:Roboto-Regular;
 }
